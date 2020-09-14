@@ -1,0 +1,40 @@
+@media screen and (max-width: 500px){
+    main{
+        align-items: center;
+        text-align: center;
+    }
+    #home h1.lg_heading{
+        line-height:1;
+        margin-bottom: 1rem;
+        margin-top: 10vh;
+        font-weight: 300;
+    }
+    #home h2.sm_heading{
+        font-size: 20px;
+        font-weight: 300;
+    }
+    .menu_branding, .menu_nav{
+        float: none;
+        width: 100%;
+        min-height: 50;
+
+    }
+    .menu_branding.show, .menu_nav.show{
+        transform: translate3d(0,0,0);
+    }
+    .menu_nav{
+        height: 70vh;
+        transform: translate3d(-100%,0,0);
+        font-size: 24px;
+    }
+    .menu_branding{
+        height: 30vh;
+        transform: translate3d(100%, 0, 0);
+    }
+    .portrait{
+        width:150px;
+        height: 150px;
+        background: url("../images/id_150.jpg");
+        border: 2px solid gold;
+    }
+}

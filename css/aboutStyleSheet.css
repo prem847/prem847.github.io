@@ -1,0 +1,149 @@
+@import url("indexMenuStyleSheet.css");
+
+*{
+    box-sizing: border-box;
+}
+body{
+    background:var(--primary_color);
+    color: #fff;
+    height: 100%;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.5;
+}
+
+.tintarc{
+    text-decoration: none;
+    color: gold;
+}
+
+h1, h2, h3{
+    margin: 0;
+    font-weight: 400;
+}
+#about h1.lg_heading{
+ font-size: 4rem;
+}
+
+#about h2.sm_heading{
+    margin-bottom: 2rem;
+    padding: 0.2rem 1rem;
+    background: rgba(46,46,46,0.5);
+}
+
+header{
+    position: fixed;
+    z-index: 2;
+    width: 100%;
+}
+
+#about h1 span{
+    color: gold;
+}
+#about h3.texts_secondary{
+    color: gold;
+}
+
+main{
+    padding:1rem 4rem 4em 4rem;
+    min-height: calc(100vh - 60px);
+}
+
+#about{
+    overflow: hidden;
+}
+
+
+#about .about_info{
+    display: grid;
+    grid-gap: 30px;
+    grid-template-areas: 
+        "bio_image bio bio"
+        "job_1 job_2 job_3";
+        grid-template-columns: repeat(3, 1fr);
+}
+
+#about .about_info .bio_image{
+    grid-area: bio_image;
+    width: 250px;
+    height: 250px;
+    margin: auto;
+    border-radius: 50%;
+    border: 3px solid gold;
+    text-align: center;
+}
+
+#about .about_info .bio{
+    grid-area: bio;
+    font-size: 1rem;
+}
+
+#about .about_info .job_1{
+    grid-area: job_1;
+}
+
+#about .about_info .job_2{
+    grid-area: job_2;
+}
+
+#about .about_info .job_3{
+    grid-area: job_3;
+}
+
+#about .about_info .job{
+    background: rgba(46,46,46,0.5);
+    padding: 0.5rem;
+    border-bottom:5px solid gold;
+}
+
+#work .project{
+    display: grid;
+}
+
+#main_footer{
+    text-align: center;
+    padding: 1rem;
+    background: rgba(46,46,46,0.5);
+    color: #fff;
+    height: 60px;
+}
+
+@media screen and (max-width:500px){
+    main{
+        align-items: center;
+        text-align: center;
+    }
+    #about .about_info{
+        grid-template-areas: 
+            "bio_image"
+            "bio"
+            "job_1"
+            "job_2"
+            "job_3";
+        grid-template-columns: 1fr;
+    }
+    .menu_branding, .menu_nav{
+        float: none;
+        width: 100%;
+        min-height: 50;
+
+    }
+    .menu_branding.show, .menu_nav.show{
+        transform: translate3d(0,0,0);
+    }
+    .menu_nav{
+        height: 70vh;
+        transform: translate3d(-100%,0,0);
+        font-size: 24px;
+    }
+    .menu_branding{
+        height: 30vh;
+        transform: translate3d(100%, 0, 0);
+    }
+    .portrait{
+        width:150px;
+        height: 150px;
+        background: url("../images/id_150.jpg");
+        border: 2px solid gold;
+    }
+}

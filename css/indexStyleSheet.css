@@ -1,0 +1,58 @@
+@import url("styleSheetConfigs.css");
+@import url("indexMenuStyleSheet.css");
+@import url("indexMediaQueries.css");
+
+#home h1.lg_heading{
+ font-size: 5rem;
+}
+
+.warn{
+    color: grey;
+    font-size: 0.6rem;
+}
+#home h2.sm_heading{
+    margin-bottom: 2rem;
+    padding: 0.2rem 1rem;
+    background: rgba(46,46,46,0.5);
+}
+
+a{
+    color: #fff;
+    text-decoration: none;
+}
+
+header{
+    position: fixed;
+    z-index: 2;
+    width: 100%;
+}
+
+#home h1 span{
+    color: gold;
+}
+
+main{
+    padding: 4rem;
+    height: 100%;
+}
+
+#home .icons{
+    margin-top: 1rem;
+}
+
+#home .icons a{
+    padding: 0.4rem;
+}
+
+#home .icons a:hover{
+    color: gold;
+    transition: var(--transition);
+}
+
+#home{
+    overflow: hidden;
+}
+
+#home h1{
+    margin-top: 20vh;
+}
